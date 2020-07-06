@@ -1,2 +1,2 @@
 test
-no build
+should build
