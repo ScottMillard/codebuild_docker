@@ -8,6 +8,6 @@ WORKDIR /go/src/github.com/golang/example/hello
 RUN go build -o /bin/HelloWorld
 
 FROM golang:1.12-alpine
-#Copy the build's output binary from the previous build container
+#Copy the build's output binary from the previous build container2
 COPY --from=build /bin/HelloWorld /bin/HelloWorld
 ENTRYPOINT ["/bin/HelloWorld"]
